@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Scrollbar hiding */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Light - Dark mode responsive colors */
+  .txt-primary {
+    @apply text-gray-700 dark:text-gray-100;
+  }
+
+  .txt-secondary {
+    @apply text-gray-600 dark:text-gray-200;
+  }
+
+  .txt-tertiary {
+    @apply text-gray-500 dark:text-gray-300;
+  }
+
+  .txt-quaternary {
+    @apply text-gray-400 dark:text-gray-400;
+  }
+}
+
+#__nuxt {
+  height: 100svh;
+  width: 100svw;
+  display: flex;
+  flex-direction: column;
+  background-color: light-dark(var(--light-color), white);
+}
+
+* {
+  scroll-behavior: smooth;
+  scroll-margin: 100px;
+  font-family: "Nunito", "Archivo", "DM Sans", "Public Sans", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
