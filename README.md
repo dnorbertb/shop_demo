@@ -4,7 +4,7 @@ Shop Demo is an e-commerce frontend application built using Nuxt 3, Vue 3, and T
 
 ## 🌐 Live Demo
 
-Experience the application live [here](demo.nbcoding.pl)
+Experience the application live [here](https://demo.nbcoding.pl)
 
 ## 🚀 Stack
 
